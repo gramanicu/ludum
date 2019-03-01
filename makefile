@@ -11,7 +11,3 @@ excludeO:
 	find . -executable -type f -not -path "*/.git/*" >.gitignore
 
 .PHONY: excludeA excludeO
-
-clear
-
-
