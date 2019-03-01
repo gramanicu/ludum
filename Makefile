@@ -5,9 +5,9 @@ main:
 	@echo "The modified .gitignore file is the one in the root folder (ludum)"
 
 excludeA: 
-	find . -executable -type f -not -path "*/.git/*" >>.gitignore
+	find . -executable -type f -not -path "*/.git/*" | cut -c 3- >>.gitignore
 
 excludeO:
-	find . -executable -type f -not -path "*/.git/*" >.gitignore
+	find . -executable -type f -not -path "*/.git/*" | cut -c 3- >.gitignore
 
 .PHONY: excludeA excludeO
