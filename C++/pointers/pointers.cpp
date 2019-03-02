@@ -17,7 +17,7 @@ void vectorChangeBad(int *a, int n) {
     }
 }
 
-void vectorChangeGood(int *a, int n) {
+void vectorChangeGood(int * a, int n) {
     int i;
     for(i = 0; i < n; i++) {
         a[i] = a[i] + 1;
@@ -46,6 +46,8 @@ int main() {
     incrementGood(&a);
     cout << a << endl;
     vectorChangeBad(v, 10);
+    printVector(v, 10);
+    vectorChangeGood(v, 10);
     printVector(v, 10);
 
     return 0;
